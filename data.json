@@ -1,0 +1,6 @@
+
+[
+    {"league": "Serie A", "round": 31, "draws_00_current": 3, "draws_00_max": 3, "matches_remaining": 2},
+    {"league": "Premier League", "round": 32, "draws_00_current": 1, "draws_00_max": 2, "matches_remaining": 4},
+    {"league": "Bundesliga", "round": 29, "draws_00_current": 2, "draws_00_max": 2, "matches_remaining": 1}
+]
