@@ -1,20 +1,24 @@
 
 fetch('data.json')
-    .then(response => response.json())
-    .then(data => {
-        const tbody = document.querySelector('#results-table tbody');
-        data.forEach(item => {
-            const tr = document.createElement('tr');
-            if (item.draws_00_current >= item.draws_00_max && item.matches_remaining > 0) {
-                tr.classList.add('highlight');
-            }
-            tr.innerHTML = `
-                <td>${item.league}</td>
-                <td>${item.round}</td>
-                <td>${item.draws_00_current}</td>
-                <td>${item.draws_00_max}</td>
-                <td>${item.matches_remaining}</td>
-            `;
-            tbody.appendChild(tr);
-        });
+  .then(response => response.json())
+  .then(data => {
+    const table = document.querySelector("table");
+    data.forEach(item => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${item.league}</td>
+        <td>${item.round}</td>
+        <td>${item.draws_0_0}</td>
+        <td>${item.max_draws}</td>
+        <td>${item.remaining}</td>
+      `;
+      // Zvýraznění řádku, pokud už je dosažen maximální počet 0:0
+      if (item.draws_0_0 === item.max_draws) {
+        row.style.backgroundColor = "#ffcccc";
+      }
+      table.appendChild(row);
     });
+  })
+  .catch(error => {
+    console.error("Chyba při načítání dat:", error);
+  });
