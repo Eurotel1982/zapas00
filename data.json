@@ -1,72 +1,72 @@
 [
-    {
-        "league": "Serie A",
-        "round": 31,
-        "draws_0_0": 3,
-        "max_draws": 3,
-        "remaining": 2
-    },
-    {
-        "league": "Premier League",
-        "round": 32,
-        "draws_0_0": 1,
-        "max_draws": 2,
-        "remaining": 4
-    },
-    {
-        "league": "Bundesliga",
-        "round": 29,
-        "draws_0_0": 2,
-        "max_draws": 2,
-        "remaining": 1
-    },
-    {
-        "league": "La Liga",
-        "round": 30,
-        "draws_0_0": 1,
-        "max_draws": 3,
-        "remaining": 3
-    },
-    {
-        "league": "Ligue 1",
-        "round": 30,
-        "draws_0_0": 0,
-        "max_draws": 2,
-        "remaining": 4
-    },
-    {
-        "league": "Eredivisie",
-        "round": 29,
-        "draws_0_0": 2,
-        "max_draws": 3,
-        "remaining": 2
-    },
-    {
-        "league": "Primeira Liga",
-        "round": 28,
-        "draws_0_0": 1,
-        "max_draws": 2,
-        "remaining": 3
-    },
-    {
-        "league": "Super Lig",
-        "round": 30,
-        "draws_0_0": 2,
-        "max_draws": 3,
-        "remaining": 3
-    },
-    {
-        "league": "Belgian Pro League",
-        "round": 31,
-        "draws_0_0": 0,
-        "max_draws": 1,
-        "remaining": 1
-    },
-    {
-        "league": "Scottish Premiership",
-        "round": 33,
-        "draws_0_0": 2,
-        "max_draws": 4,
-        "remaining": 1
-    }
+  {
+    "league": "Serie A",
+    "round": 32,
+    "draws_0_0": 3,
+    "max_draws": 3,
+    "remaining": 6
+  },
+  {
+    "league": "Premier League",
+    "round": 33,
+    "draws_0_0": 1,
+    "max_draws": 2,
+    "remaining": 5
+  },
+  {
+    "league": "Bundesliga",
+    "round": 30,
+    "draws_0_0": 2,
+    "max_draws": 2,
+    "remaining": 4
+  },
+  {
+    "league": "La Liga",
+    "round": 31,
+    "draws_0_0": 1,
+    "max_draws": 3,
+    "remaining": 4
+  },
+  {
+    "league": "Ligue 1",
+    "round": 31,
+    "draws_0_0": 0,
+    "max_draws": 2,
+    "remaining": 7
+  },
+  {
+    "league": "Eredivisie",
+    "round": 30,
+    "draws_0_0": 2,
+    "max_draws": 3,
+    "remaining": 4
+  },
+  {
+    "league": "Primeira Liga",
+    "round": 29,
+    "draws_0_0": 1,
+    "max_draws": 2,
+    "remaining": 6
+  },
+  {
+    "league": "Super Lig",
+    "round": 31,
+    "draws_0_0": 2,
+    "max_draws": 3,
+    "remaining": 7
+  },
+  {
+    "league": "Belgian Pro League",
+    "round": 32,
+    "draws_0_0": 0,
+    "max_draws": 1,
+    "remaining": 2
+  },
+  {
+    "league": "Scottish Premiership",
+    "round": 34,
+    "draws_0_0": 2,
+    "max_draws": 4,
+    "remaining": 1
+  }
 ]
