@@ -10,7 +10,6 @@ fetch('data.json')
         <td>${item.round}</td>
         <td>${item.draws_0_0}</td>
         <td>${item.max_draws}</td>
-        <td>${item.remaining}</td>
       `;
       // Zvýraznění řádku, pokud už je dosažen maximální počet 0:0
       if (item.draws_0_0 === item.max_draws) {
