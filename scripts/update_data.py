@@ -7,7 +7,7 @@ headers = {
 }
 
 # Získání všech zápasů pro dnešní den
-url = "https://v3.football.api-sports.io/fixtures?date=today"
+url = "https://v3.football.api-sports.io/fixtures?season=2023&next=500"
 response = requests.get(url, headers=headers)
 fixtures = response.json().get("response", [])
 
