@@ -26,7 +26,7 @@ for match in fixtures:
     if status != "FT":
         continue
 
-    key = (league, round_)
+    key = (league_name, round_)
     if key not in results:
         results[key] = {"draws_0_0": 0, "matches": 0}
 
