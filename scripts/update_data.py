@@ -18,11 +18,10 @@ results = {}
 
 for match in fixtures:
     league_raw = match.get("league")
-
-        league_name = match["league"]["name"]
-        round_ = match["league"]["round"]
-        goals = match["goals"]
-        status = match["fixture"]["status"]["short"]
+    league_name = match["league"]["name"]
+    round_ = match["league"]["round"]
+    goals = match["goals"]
+    status = match["fixture"]["status"]["short"]
 
     if status != "FT":
         continue
