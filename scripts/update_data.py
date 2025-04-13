@@ -17,9 +17,12 @@ fixtures = response.json().get("response", [])
 results = {}
 
 for match in fixtures:
-    league = match.get("league", {})
-    country = league.get("country", {}).get("name", "Neznámý stát")
-    league_name = f'{country} – {league.get("name", "Neznámá liga")}'
+    league_raw = match.get("league")
+    if isinstance(league_raw, dict):
+    country = league_raw.get("country", {}).get("name", "Neznámý stát")
+    league_name = f'{country} – {league_raw.get("name", "Neznámá liga")}'
+    else:
+    league_name = league_raw  # fallback, pokud je to string nebo něco jiného
     round_ = match["league"]["round"]
     goals = match["goals"]
     status = match["fixture"]["status"]["short"]
