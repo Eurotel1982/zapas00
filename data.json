@@ -906,6 +906,12 @@
     "max_draws": 3
   },
   {
+    "league": "Denmark Series - Relegation Round",
+    "round": "Relegation Round - Group 1 - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
     "league": "Premier League",
     "round": "Regular Season - 21",
     "draws_0_0": 0,
@@ -1812,6 +1818,12 @@
     "max_draws": 3
   },
   {
+    "league": "Cup",
+    "round": "1st Round",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
     "league": "Prva Liga",
     "round": "Championship Round - 1",
     "draws_0_0": 0,
@@ -1946,13 +1958,13 @@
   {
     "league": "Championnat National",
     "round": "Group B - 26",
-    "draws_0_0": 2,
+    "draws_0_0": 1,
     "max_draws": 3
   },
   {
     "league": "Championnat National",
     "round": "Group A - 26",
-    "draws_0_0": 4,
+    "draws_0_0": 3,
     "max_draws": 3
   },
   {
@@ -1995,6 +2007,36 @@
     "league": "Challenge League",
     "round": "Championship Round - 7",
     "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Ligue 1",
+    "round": "Regular Season - 25",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera B Metropolitana",
+    "round": "Apertura - 11",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Super League 1",
+    "round": "Championship Round - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Division",
+    "round": "Championship Round - 5",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga Primera U20",
+    "round": "Clausura - 16",
+    "draws_0_0": 0,
     "max_draws": 3
   }
 ]
