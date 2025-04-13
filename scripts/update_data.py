@@ -23,15 +23,15 @@ for match in fixtures:
     status = match["fixture"]["status"]["short"]
 
     key = (league, round_)
-    if key not in results:
+    results[key] = {"draws_0_0": 0, "matches": 0}  # odstraněno "remaining"
         results[key] = {"draws_0_0": 0, "matches": 0, "remaining": 0}
 
     if status == "FT":
         results[key]["matches"] += 1
         if goals["home"] == 0 and goals["away"] == 0:
             results[key]["draws_0_0"] += 1
-    elif status in ("NS", "TBD"):
-        results[key]["remaining"] += 1
+    # elif status in ("NS", "TBD"):
+    #     results[key]["remaining"] += 1
 
 # Převod na výstupní strukturu
 output = []
@@ -41,7 +41,7 @@ for (league, round_), data in results.items():
         "round": round_,
         "draws_0_0": data["draws_0_0"],
         "max_draws": 3,
-        "remaining": data["remaining"]
+        # "remaining": data["remaining"]  # zakomentováno nebo smazáno
     })
 
 # Uložení jako data.json
