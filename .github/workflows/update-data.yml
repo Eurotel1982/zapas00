@@ -28,5 +28,5 @@ jobs:
           if ! git diff --quiet; then
             git add data.json
             git commit -m "Update data.json via GitHub Actions"
-            git push https://x-access-token:${GH_TOKEN}@github.com/Eurotel1982/zapas00.git
+            git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
           fi
