@@ -9,6 +9,8 @@ headers = {
 # Získání všech zápasů pro dnešní den
 url = "https://v3.football.api-sports.io/fixtures?season=2023&next=500"
 response = requests.get(url, headers=headers)
+print("STATUS:", response.status_code)
+print("ODPOVĚĎ:", response.text)
 fixtures = response.json().get("response", [])
 
 # Výpočet výsledků 0:0 podle ligy a kola
