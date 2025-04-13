@@ -620,7 +620,7 @@
   {
     "league": "Tercera División RFEF - Group 17",
     "round": "Group 17 - 30",
-    "draws_0_0": 0,
+    "draws_0_0": 1,
     "max_draws": 3
   },
   {
@@ -1020,6 +1020,12 @@
     "max_draws": 3
   },
   {
+    "league": "2. Liga Interregional - Group 1",
+    "round": "Group 1 - 20",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
     "league": "1. Liga Classic - Group 1",
     "round": "Group 1 - 24",
     "draws_0_0": 0,
@@ -1248,6 +1254,12 @@
     "max_draws": 3
   },
   {
+    "league": "2. Liga Interregional - Group 4",
+    "round": "Group 4 - 20",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
     "league": "1. Liga Classic - Group 3",
     "round": "Group 3 - 24",
     "draws_0_0": 0,
@@ -1323,12 +1335,6 @@
     "league": "1. Liga Promotion",
     "round": "Regular Season - 28",
     "draws_0_0": 1,
-    "max_draws": 3
-  },
-  {
-    "league": "2. Liga Interregional - Group 4",
-    "round": "Group 4 - 20",
-    "draws_0_0": 0,
     "max_draws": 3
   },
   {
@@ -1614,12 +1620,6 @@
     "max_draws": 3
   },
   {
-    "league": "2. Liga Interregional - Group 1",
-    "round": "Group 1 - 20",
-    "draws_0_0": 0,
-    "max_draws": 3
-  },
-  {
     "league": "Ligue 1",
     "round": "Regular Season - 26",
     "draws_0_0": 0,
@@ -1706,7 +1706,7 @@
   {
     "league": "Campeonato de Portugal Prio - Group B",
     "round": "Group B - 26",
-    "draws_0_0": 0,
+    "draws_0_0": 1,
     "max_draws": 3
   },
   {
@@ -1808,7 +1808,7 @@
   {
     "league": "NPFL",
     "round": "Regular Season - 33",
-    "draws_0_0": 0,
+    "draws_0_0": 1,
     "max_draws": 3
   },
   {
@@ -1836,6 +1836,12 @@
     "max_draws": 3
   },
   {
+    "league": "Landesliga - Vorarlbergliga",
+    "round": "Vorarlberg - 17",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
     "league": "1st League - FBiH",
     "round": "FBiH - 21",
     "draws_0_0": 0,
@@ -1856,6 +1862,12 @@
   {
     "league": "4. liga - Divizie C",
     "round": "Division C - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Third NL - Sjever",
+    "round": "North - 23",
     "draws_0_0": 0,
     "max_draws": 3
   },
@@ -1896,9 +1908,81 @@
     "max_draws": 3
   },
   {
+    "league": "Premier League",
+    "round": "Regular Season - 27",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Campeonato de Portugal Prio - Group A",
+    "round": "Group A - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 8",
+    "round": "Group 8 - 32",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Third NL - Sredite",
+    "round": "Center - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "U23 League",
+    "round": "Clausura - 15",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Erovnuli Liga",
+    "round": "Regular Season - 8",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
     "league": "Third NL - Zapad",
     "round": "East - 22",
     "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Super Liga",
+    "round": "Championship Round - 5",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Botola Pro",
+    "round": "Regular Season - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Botola 2",
+    "round": "Regular Season - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga I",
+    "round": "Relegation Round - 4",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie C - Girone C",
+    "round": "Girone C - 36",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Challenge League",
+    "round": "Championship Round - 7",
+    "draws_0_0": 1,
     "max_draws": 3
   }
 ]
