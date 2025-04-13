@@ -18,11 +18,12 @@ results = {}
 
 for match in fixtures:
     league_raw = match.get("league")
+
     if isinstance(league_raw, dict):
-    country = league_raw.get("country", {}).get("name", "Neznámý stát")
-    league_name = f'{country} – {league_raw.get("name", "Neznámá liga")}'
+        country = league_raw.get("country", {}).get("name", "Neznámý stát")
+        league_name = f'{country} – {league_raw.get("name", "Neznámá liga")}'
     else:
-    league_name = league_raw  # fallback, pokud je to string nebo něco jiného
+        league_name = league_raw  # fallback pro případy, kdy je to string
     round_ = match["league"]["round"]
     goals = match["goals"]
     status = match["fixture"]["status"]["short"]
