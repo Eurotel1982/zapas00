@@ -506,7 +506,7 @@
   {
     "league": "Tercera División RFEF - Group 18",
     "round": "Group 18 - 30",
-    "draws_0_0": 0,
+    "draws_0_0": 1,
     "max_draws": 3
   },
   {
@@ -1874,6 +1874,30 @@
   {
     "league": "2. SNL",
     "round": "Regular Season - 23",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Campeonato de Portugal Prio - Group C",
+    "round": "Group C - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Campeonato de Portugal Prio - Group D",
+    "round": "Group D - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Segunda División RFEF - Group 1",
+    "round": "Group 1 - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Third NL - Zapad",
+    "round": "East - 22",
     "draws_0_0": 0,
     "max_draws": 3
   }
