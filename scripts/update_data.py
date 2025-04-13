@@ -9,7 +9,7 @@ headers = {
 
 # Získání všech zápasů pro dnešní den
 today = date.today().isoformat()
-url = f"https://v3.football.api-sports.io/fixtures?date={today}"
+url = f"https://v3.football.api-sports.io/fixtures?date=2025-04-13"
 response = requests.get(url, headers=headers)
 fixtures = response.json().get("response", [])
 
