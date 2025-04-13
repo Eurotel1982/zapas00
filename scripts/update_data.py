@@ -20,7 +20,12 @@ for match in fixtures:
     league_raw = match.get("league")
 
     if isinstance(league_raw, dict):
-        country = league_raw.get("country", {}).get("name", "Neznámý stát")
+        country_raw = league_raw.get("country")
+        if isinstance(country_raw, dict):
+            country = country_raw.get("name", "Neznámý stát")
+        else:    
+            country = "Neznámý stát"
+
         league_name = f'{country} – {league_raw.get("name", "Neznámá liga")}'
     else:
         country = "Neznámý stát"
