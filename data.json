@@ -1574,7 +1574,7 @@
   {
     "league": "Third League - Northeast",
     "round": "Northeast - 23",
-    "draws_0_0": 1,
+    "draws_0_0": 0,
     "max_draws": 3
   },
   {
@@ -1941,6 +1941,18 @@
     "league": "Erovnuli Liga",
     "round": "Regular Season - 8",
     "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Championnat National",
+    "round": "Group B - 26",
+    "draws_0_0": 2,
+    "max_draws": 3
+  },
+  {
+    "league": "Championnat National",
+    "round": "Group A - 26",
+    "draws_0_0": 4,
     "max_draws": 3
   },
   {
