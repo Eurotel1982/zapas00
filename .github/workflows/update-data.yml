@@ -14,9 +14,7 @@ jobs:
 
       - name: Fetch API data and update data.json
         run: |
-          curl -s -X GET "https://v3.football.api-sports.io/fixtures?season=2023&next=500" \
-            -H "x-apisports-key: 8bb57fb34476880013cbe2f37d283451" \
-            -H "accept: application/json" > raw.json
+          echo "Spouštím update_data.py"
           python3 scripts/update_data.py
 
       - name: Commit and push if changes
