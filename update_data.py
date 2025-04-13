@@ -1,4 +1,3 @@
-
 import requests
 import json
 
@@ -35,7 +34,6 @@ def process_data():
 
         fixtures = get_fixtures(league_id, round_name)
         draws = 0
-        total = 0
         remaining = 0
         league_name = ""
         round_number = round_name
@@ -44,7 +42,6 @@ def process_data():
             league_name = match["league"]["name"]
             status = match["fixture"]["status"]["short"]
             goals = match["goals"]
-            total += 1
 
             if status == "FT":
                 if goals["home"] == 0 and goals["away"] == 0:
@@ -56,7 +53,7 @@ def process_data():
             "league": league_name,
             "round": round_number,
             "draws_0_0": draws,
-            "max_draws": draws,
+            "max_draws": draws,  # Později doplníme historické maximum
             "remaining": remaining
         })
 
