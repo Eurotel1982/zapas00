@@ -12,7 +12,7 @@ url = "https://v3.football.api-sports.io/fixtures?season=2023&next=500"
 response = requests.get(url, headers=headers)
 print("STATUS:", response.status_code)
 print("ODPOVĚĎ:", response.text[:500])  # vypíše prvních 500 znaků odpovědi
-return  # dočasně ukončí skript tady
+exit()  # dočasně ukončí skript tady
 
 # Výpočet výsledků 0:0 podle ligy a kola
 results = {}
