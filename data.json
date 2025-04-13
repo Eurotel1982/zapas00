@@ -1,1 +1,1832 @@
-[]
+[
+  {
+    "league": "Division d'Honneur",
+    "round": "Regular Season - 23",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga Premier Serie A",
+    "round": "Clausura - 14",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera División",
+    "round": "Clausura - 17",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "USL Championship",
+    "round": "Regular Season - 7",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera División",
+    "round": "Regular Season - 7",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera División",
+    "round": "Apertura - 8",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie A",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "National League - Southern",
+    "round": "Southern League - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Brasileiro Women",
+    "round": "1st Phase - 4",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera División",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Segunda División",
+    "round": "1st Phase - 6",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Major League Soccer",
+    "round": "Regular Season - 12",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Division di Honor",
+    "round": "Play-offs Kaya 6 - 7",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "USL Super League",
+    "round": "Regular Season - 27",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga MX",
+    "round": "Clausura - 15",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga de Expansión MX",
+    "round": "Clausura - 14",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga Nacional",
+    "round": "Clausura - 18",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera Division",
+    "round": "Clausura - 18",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera Division",
+    "round": "Clausura - 16",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga Panameña de Fútbol",
+    "round": "Apertura - 13",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga Nacional",
+    "round": "Clausura - 15",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera A",
+    "round": "Apertura - 13",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "NWSL Women",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "USL League One",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "National Football League",
+    "round": "Regular Season - 6",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Northern NSW NPL",
+    "round": "Regular Season - 8",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "J3 League",
+    "round": "Regular Season - 9",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "NNSW League 1",
+    "round": "Regular Season - 5",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Japan Football League",
+    "round": "Regular Season - 6",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tasmania Southern Championship",
+    "round": "Regular Season - 4",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Capital Territory NPL",
+    "round": "Regular Season - 2",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "First League",
+    "round": "Regular Season - 28",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "A-League Women",
+    "round": "Regular Season - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Victoria NPL",
+    "round": "Regular Season - 10",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Queensland Premier League",
+    "round": "Regular Season - 7",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "J1 League",
+    "round": "Regular Season - 10",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "J2 League",
+    "round": "Regular Season - 9",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "New South Wales NPL",
+    "round": "Regular Season - 10",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "K League 2",
+    "round": "Regular Season - 7",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "K League 1",
+    "round": "Regular Season - 8",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "WE League",
+    "round": "Regular Season - 17",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Capital Territory NPL 2",
+    "round": "Regular Season - 2",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Victoria NPL 2",
+    "round": "Regular Season - 10",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "New South Wales NPL 2",
+    "round": "Regular Season - 10",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "A-League",
+    "round": "Regular Season - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "League One",
+    "round": "Regular Season - 4",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "League Two",
+    "round": "Regular Season - 5",
+    "draws_0_0": 4,
+    "max_draws": 3
+  },
+  {
+    "league": "Super League",
+    "round": "Regular Season - 27",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 13",
+    "round": "Group 13 - 30",
+    "draws_0_0": 2,
+    "max_draws": 3
+  },
+  {
+    "league": "Diski Challenge",
+    "round": "Regular Season - 27",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "3. liga - CFL B",
+    "round": "ČFL B - 23",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Persha Liga",
+    "round": "Relegation Round - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga 1 Feminin",
+    "round": "Relegation Round - 6",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Second League - Group 4",
+    "round": "Group 4 - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "PFL",
+    "round": "Regular Season - 9",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "FNL",
+    "round": "Regular Season - 22",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Landesliga - Wien",
+    "round": "Wien - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "4. liga - Divizie E",
+    "round": "Division E - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "4. liga - Divizie F",
+    "round": "Division F - 21",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "3. liga - MSFL",
+    "round": "MSFL - 23",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 14",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "2. Liga",
+    "round": "Regular Season - 23",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "3. liga - West",
+    "round": "West - 25",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Landesliga - Tirol",
+    "round": "Tirol - 18",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Hamburg",
+    "round": "Hamburg - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Super League 2",
+    "round": "Promotion Round - 8",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "U19 League",
+    "round": "Regular Season - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "2. liga",
+    "round": "Regular Season - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Landesliga - Niederosterreich",
+    "round": "Niederösterreich - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Campionato Primavera - 1",
+    "round": "Regular Season - 33",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "2. Frauen Bundesliga",
+    "round": "Regular Season - 21",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Segunda División RFEF - Group 5",
+    "round": "Group 5 - 31",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Campionato Primavera - 2",
+    "round": "Group B - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "NB III - Northeast",
+    "round": "Northeast - 24",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "NB III - Northwest",
+    "round": "Northwest - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "NB III - Southwest",
+    "round": "Southwest - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1a Divisió",
+    "round": "Regular Season - 23",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Srpska Liga - West",
+    "round": "West - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "UEFA U17 Championship - Qualification",
+    "round": "Round 2 - League B - 2",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "U19 Bundesliga",
+    "round": "2nd Phase Group B - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Srpska Liga - East",
+    "round": "East - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Liga Women",
+    "round": "Relegation Round - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Segunda División RFEF - Group 2",
+    "round": "Group 2 - 31",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 18",
+    "round": "Group 18 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 7",
+    "round": "Group 7 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 6",
+    "round": "Group 6 - 30",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie A Women",
+    "round": "Championship Round - 6",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Esiliiga B",
+    "round": "Regular Season - 6",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Esiliiga A",
+    "round": "Regular Season - 6",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Liga Women",
+    "round": "Championship Round - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 3",
+    "round": "Group 3 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 5",
+    "round": "Group 5 - 30",
+    "draws_0_0": 3,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 30",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "I Liga",
+    "round": "Regular Season - 28",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Segunda Liga",
+    "round": "Regular Season - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1a Divisão - Women",
+    "round": "Regular Season - 20",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "2a Divisió",
+    "round": "Regular Season - 17",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera División RFEF - Group 2",
+    "round": "Group 2 - 32",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera División RFEF - Group 1",
+    "round": "Group 1 - 32",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Segunda División RFEF - Group 4",
+    "round": "Group 4 - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Segunda División RFEF - Group 3",
+    "round": "Group 3 - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 17",
+    "round": "Group 17 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 2",
+    "round": "Group 2 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 1",
+    "round": "Group 1 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 14",
+    "round": "Group 14 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 16",
+    "round": "Group 16 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 10",
+    "round": "Group 10 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera División Femenina",
+    "round": "Regular Season - 25",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 9",
+    "round": "Group 9 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Gamma Ethniki - Group 3",
+    "round": "Group 3 - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "III Liga - Group 1",
+    "round": "Group 1 - 25",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "U19 Bundesliga",
+    "round": "2nd Phase Group B - 10",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Ekstraliga Women",
+    "round": "Regular Season - 17",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga 3",
+    "round": "Promotion Group - 9",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Second League A - Spring Season Gold",
+    "round": "Spring Season Gold - 7",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Division Women",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Supreme Division Women",
+    "round": "Regular Season - 5",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Shield Cup",
+    "round": "Round of 16",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Cup",
+    "round": "Round of 16",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Eerste Divisie",
+    "round": "Regular Season - 34",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Eredivisie",
+    "round": "Regular Season - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 4",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie A",
+    "round": "Regular Season - 32",
+    "draws_0_0": 2,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie C - Girone B",
+    "round": "Girone B - 36",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Lig",
+    "round": "Regular Season - 34",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Elitettan",
+    "round": "Regular Season - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga II",
+    "round": "Promotion Round - 4",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Suomen Cup",
+    "round": "3rd Round",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Frauenliga",
+    "round": "Championship Round - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Frauenliga",
+    "round": "Relegation Round - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Czech Liga",
+    "round": "Regular Season - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Thai League 1",
+    "round": "Regular Season - 23",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premiership",
+    "round": "1st Phase - 33",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Regionalliga - Nordost",
+    "round": "Nordost - 29",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "2. Lig",
+    "round": "Beyaz - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 12",
+    "round": "Group 12 - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "V.League 2",
+    "round": "Regular Season - 14",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "III Liga - Group 2",
+    "round": "Group 2 - 25",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Kvindeliga",
+    "round": "Championship Round - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Ettan - Södra",
+    "round": "Södra - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Division 2 - Norra Götaland",
+    "round": "Norra Götaland - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Division 2 - Norra Svealand",
+    "round": "Norra Svealand - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Division 2 - Västra Götaland",
+    "round": "Västra Götaland - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Virsliga",
+    "round": "Regular Season - 7",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "V.League 1",
+    "round": "Regular Season - 18",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Vysshaya Liga",
+    "round": "Regular Season - 5",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Liga",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premijer Liga",
+    "round": "Regular Season - 25",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Division",
+    "round": "Relegation Round - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Challenger Pro League",
+    "round": "Regular Season - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "2. Bundesliga",
+    "round": "Regular Season - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "3. Liga",
+    "round": "Regular Season - 33",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Meistriliiga",
+    "round": "Regular Season - 7",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Ýokary Liga",
+    "round": "Regular Season - 6",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Jupiler Pro League",
+    "round": "Championship Round - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Pro League A",
+    "round": "Regular Season - 2",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Mauritian League",
+    "round": "Regular Season - 14",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Super League",
+    "round": "Regular Season - 5",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Championship Round - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Closing - 2nd Phase - 2",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "First NL",
+    "round": "Regular Season - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "La Liga",
+    "round": "Regular Season - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "NB I",
+    "round": "Regular Season - 27",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "First League",
+    "round": "Regular Season - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Segunda División",
+    "round": "Regular Season - 35",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Thai League 1",
+    "round": "Regular Season - 15",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Regionalliga - West",
+    "round": "West - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Liga Classic - Group 1",
+    "round": "Group 1 - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Liga Classic - Group 2",
+    "round": "Group 2 - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Nordost-Süd",
+    "round": "Nordost-Süd - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Nordost-Nord",
+    "round": "Nordost-Nord - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Regionalliga - SudWest",
+    "round": "Südwest - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Bayern Nord",
+    "round": "Bayern Nord - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Regionalliga - West",
+    "round": "West - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Schleswig-Holstein",
+    "round": "Schleswig-Holstein - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Regionalliga - Nord",
+    "round": "Nord - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Frauen Bundesliga",
+    "round": "Regular Season - 19",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga 1",
+    "round": "Regular Season - 28",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Bremen",
+    "round": "Bremen - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "2. Lig",
+    "round": "Kirmizi - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "3. Lig - Group 1",
+    "round": "Group 1 - 28",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "3. Lig - Group 4",
+    "round": "Group 4 - 28",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "3. Lig - Group 2",
+    "round": "Group 2 - 28",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "3. Lig - Group 3",
+    "round": "Group 3 - 28",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Derde Divisie - Sunday",
+    "round": "Group B - 29",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Central Youth League",
+    "round": "Regular Season - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Persha Liga",
+    "round": "Championship Round - 2",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Allsvenskan",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Division 2 - Östra Götaland",
+    "round": "Södra Götaland - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 25",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Super League 2",
+    "round": "Relegation Round - 8",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Baiano U20",
+    "round": "1st Phase - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Superliga",
+    "round": "Championship Round - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Superliga",
+    "round": "Relegation Round - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Second League - Group 3",
+    "round": "Group 3 - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Second League - Group 1",
+    "round": "Group 1 - 5",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "NM Cupen",
+    "round": "1st Round",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Division",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Super Liga",
+    "round": "Relegation Round - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Denmark Series - Relegation Round",
+    "round": "Relegation Round - Group 2 - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie D - Girone G",
+    "round": "Group G - 31",
+    "draws_0_0": 2,
+    "max_draws": 3
+  },
+  {
+    "league": "Super League",
+    "round": "Regular Season - 25",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Challenge League",
+    "round": "Regular Season - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Super League",
+    "round": "Regular Season - 32",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 5",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Liga Classic - Group 3",
+    "round": "Group 3 - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Feminine Division 1",
+    "round": "Regular Season - 20",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "National 3 - Group J",
+    "round": "Group J - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Elite One",
+    "round": "Regular Season - 16",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Ligue 1",
+    "round": "Regular Season - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Bundesliga",
+    "round": "Championship Round - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Super League",
+    "round": "Regular Season - 2",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Relegation Round - 1",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Ekstraklasa",
+    "round": "Regular Season - 28",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Somali Premier League",
+    "round": "Regular Season - 15",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 32",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. SNL",
+    "round": "Regular Season - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Liga Promotion",
+    "round": "Regular Season - 28",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "2. Liga Interregional - Group 4",
+    "round": "Group 4 - 20",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "First Amateur Division",
+    "round": "VV - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Second Amateur Division - ACFF",
+    "round": "ACFF - 32",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Second Amateur Division - VFV A",
+    "round": "VV A - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie B",
+    "round": "Regular Season - 33",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Third Amateur Division - VFV A",
+    "round": "VV A - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Süper Lig",
+    "round": "Regular Season - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Niederrhein",
+    "round": "Niederrhein - 27",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Baden-Württemberg",
+    "round": "Baden-Württemberg - 27",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Westfalen",
+    "round": "Westfalen - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Landesliga - Karnten",
+    "round": "Kärnten - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Niedersachsen",
+    "round": "Niedersachsen - 30",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie C - Girone A",
+    "round": "Girone A - 36",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Hessen",
+    "round": "Hessen - 32",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Women's Championship",
+    "round": "Regular Season - 11",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Non League Div One - Isthmian South Central",
+    "round": "Isthmian South Central - 39",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premyer Liqa",
+    "round": "Regular Season - 30",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "National 3 - Group A",
+    "round": "Group A - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "National 3 - Group F",
+    "round": "Group F - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "National 3 - Group D",
+    "round": "Group D - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Oberliga - Mittelrhein",
+    "round": "Mittelrhein - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League 2 Division One",
+    "round": "Group 1 - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1st Division",
+    "round": "Regular Season - 25",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie D - Girone B",
+    "round": "Group B - 35",
+    "draws_0_0": 2,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie D - Girone A",
+    "round": "Group A - 35",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie D - Girone C",
+    "round": "Group C - 35",
+    "draws_0_0": 3,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie D - Girone D",
+    "round": "Group D - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie D - Girone E",
+    "round": "Group E - 31",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie D - Girone F",
+    "round": "Group F - 31",
+    "draws_0_0": 2,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie D - Girone H",
+    "round": "Group H - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie D - Girone I",
+    "round": "Group I - 31",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Ligue A",
+    "round": "Regular Season - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1. Deild",
+    "round": "Regular Season - 5",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Damallsvenskan",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Superettan",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Division 2 - Södra Svealand",
+    "round": "Södra Svealand - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1st Division",
+    "round": "Regular Season - 32",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Serie A Women",
+    "round": "Relegation Round - 6",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "First Amateur Division",
+    "round": "ACFF - Promotion Round - 7",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "First Amateur Division",
+    "round": "ACFF - Relegation Round - 7",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Third League - Northeast",
+    "round": "Northeast - 23",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Campionato",
+    "round": "Regular Season - 28",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Cup",
+    "round": "Semi-finals",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Superliga",
+    "round": "Regular Season - 28",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Division Intermedia",
+    "round": "Regular Season - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier Soccer League",
+    "round": "Regular Season - 6",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "2nd Division - Play-offs",
+    "round": "Championship - Final",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Bundesliga",
+    "round": "Regular Season - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "2. Liga Interregional - Group 1",
+    "round": "Group 1 - 20",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Ligue 1",
+    "round": "Regular Season - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "4. liga - Divizie D",
+    "round": "Division D - 21",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Championship Round - 9",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Relegation Round - 9",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Super Liga",
+    "round": "Relegation Round - 5",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Super League 1",
+    "round": "Conference League Play-off Group - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Ligue 2",
+    "round": "Regular Season - 20",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Meistaradeildin",
+    "round": "Regular Season - 5",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "HNL",
+    "round": "Regular Season - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Second League",
+    "round": "Regular Season - 31",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "National Division",
+    "round": "Regular Season - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "NB II",
+    "round": "Regular Season - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Landesliga - Steiermark",
+    "round": "Steiermark - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "3. liga - East",
+    "round": "East - 22",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Campeonato de Portugal Prio - Group B",
+    "round": "Group B - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "NB III - Southeast",
+    "round": "Southeast - 24",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "Srpska Liga - Belgrade",
+    "round": "Belgrade - 20",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Úrvalsdeild",
+    "round": "Regular Season - 2",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primera C",
+    "round": "Regular Season - 6",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Ettan - Norra",
+    "round": "Norra - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Division 2 - Norrland",
+    "round": "Norrland - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Liga 3",
+    "round": "Relegation Round - 8",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Srpska Liga - Vojvodina",
+    "round": "Vojvodina - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Girabola",
+    "round": "Regular Season - 24",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "League",
+    "round": "Regular Season - 19",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "EFL Trophy",
+    "round": "Final",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Championship Round - 2",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "First League",
+    "round": "Regular Season - 27",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "FA Women's Cup",
+    "round": "Semi-finals",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Jupiler Pro League",
+    "round": "Conference League Play-off Group - 3",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "AXA Women’s Super League",
+    "round": "Quarter-finals",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "NPFL",
+    "round": "Regular Season - 33",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Prva Liga",
+    "round": "Championship Round - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Prva Liga",
+    "round": "Relegation Round - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Super Liga",
+    "round": "Championship Round - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  }
+]
