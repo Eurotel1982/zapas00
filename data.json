@@ -470,7 +470,7 @@
   {
     "league": "Srpska Liga - West",
     "round": "West - 21",
-    "draws_0_0": 0,
+    "draws_0_0": 1,
     "max_draws": 3
   },
   {
@@ -1718,7 +1718,7 @@
   {
     "league": "Srpska Liga - Belgrade",
     "round": "Belgrade - 20",
-    "draws_0_0": 0,
+    "draws_0_0": 1,
     "max_draws": 3
   },
   {
@@ -1826,6 +1826,48 @@
   {
     "league": "Super Liga",
     "round": "Championship Round - 1",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Primeira Liga",
+    "round": "Regular Season - 29",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "1st League - FBiH",
+    "round": "FBiH - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "4. liga - Divizie A",
+    "round": "Division A - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "3. liga - CFL A",
+    "round": "ČFL A - 23",
+    "draws_0_0": 1,
+    "max_draws": 3
+  },
+  {
+    "league": "4. liga - Divizie C",
+    "round": "Division C - 21",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 26",
+    "draws_0_0": 0,
+    "max_draws": 3
+  },
+  {
+    "league": "Premier Division",
+    "round": "Championship Round - 2",
     "draws_0_0": 0,
     "max_draws": 3
   }
