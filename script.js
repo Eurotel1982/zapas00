@@ -2,7 +2,7 @@
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
-    const table = document.querySelector("table");
+    const table = document.querySelector("tbody");
     data.forEach(item => {
       const row = document.createElement("tr");
       row.innerHTML = `
