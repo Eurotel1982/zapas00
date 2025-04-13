@@ -2,112 +2,62 @@
 import requests
 import json
 from collections import defaultdict
-from datetime import datetime
 
 API_KEY = "8bb57fb34476880013cbe2f37d283451"
 HEADERS = {"x-apisports-key": API_KEY}
 BASE_URL = "https://v3.football.api-sports.io"
 
-SEASONS = [2023, 2024, 2025]
-
-def get_all_leagues():
-    response = requests.get(f"{BASE_URL}/leagues", headers=HEADERS)
-    leagues = response.json().get("response", [])
-    return [
-        {
-            "id": league["league"]["id"],
-            "name": league["league"]["name"],
-            "country": league["country"]["name"]
-        }
-        for league in leagues
-        if league["seasons"][-1]["year"] in SEASONS
-    ]
-
-def get_fixtures(league_id, season):
-    fixtures = []
-    page = 1
-    while True:
-        url = f"{BASE_URL}/fixtures?league={league_id}&season={season}&status=FT&page={page}"
-        response = requests.get(url, headers=HEADERS)
-        data = response.json().get("response", [])
-        if not data:
-            break
-        fixtures.extend(data)
-        page += 1
-    return fixtures
+def fetch_fixtures():
+    url = f"{BASE_URL}/fixtures?season=2024&status=FT&next=500"
+    response = requests.get(url, headers=HEADERS)
+    return response.json().get("response", [])
 
 def process_fixtures(fixtures):
-    counts = defaultdict(lambda: defaultdict(int))
-    for f in fixtures:
-        league_name = f["league"]["name"]
-        round_name = f["league"]["round"]
-        goals = f["goals"]
-        if goals["home"] == 0 and goals["away"] == 0:
-            counts[league_name][round_name] += 1
-    max_per_league = {
-        league: max(rounds.values()) for league, rounds in counts.items()
-    }
-    return max_per_league
+    results = defaultdict(lambda: {"draws_0_0": 0, "matches": 0})
+    for match in fixtures:
+        league = match["league"]["name"]
+        round_ = match["league"]["round"]
+        goals = match["goals"]
+        status = match["fixture"]["status"]["short"]
 
-def get_current_rounds():
-    url = f"{BASE_URL}/fixtures?next=300"
-    response = requests.get(url, headers=HEADERS)
-    fixtures = response.json().get("response", [])
-    current_data = {}
-    for f in fixtures:
-        league = f["league"]["name"]
-        country = f["league"]["country"]
-        round_ = f["league"]["round"]
+        if status != "FT":
+            continue
+
         key = (league, round_)
-        if key not in current_data:
-            current_data[key] = {
+        results[key]["matches"] += 1
+        if goals["home"] == 0 and goals["away"] == 0:
+            results[key]["draws_0_0"] += 1
+
+    return results
+
+def get_current_rounds(results):
+    current = {}
+    for (league, round_), data in results.items():
+        if league not in current or int(data["matches"]) > int(current[league]["matches"]):
+            current[league] = {
                 "league": league,
-                "country": country,
                 "round": round_,
-                "draws_00_current": 0,
-                "matches_remaining": 0
+                "draws_0_0": data["draws_0_0"],
+                "matches": data["matches"]
             }
-        if f["fixture"]["status"]["short"] == "FT":
-            goals = f["goals"]
-            if goals["home"] == 0 and goals["away"] == 0:
-                current_data[key]["draws_00_current"] += 1
-        else:
-            current_data[key]["matches_remaining"] += 1
-    return current_data
+    return list(current.values())
 
 def main():
-    print("Stahuji seznam lig...")
-    leagues = get_all_leagues()
+    print("Stahuji zápasy...")
+    fixtures = fetch_fixtures()
+    print(f"Načteno zápasů: {len(fixtures)}")
 
-    print("Stahuji historické zápasy...")
-    all_fixtures = []
-    for league in leagues:
-        for season in SEASONS:
-            fixtures = get_fixtures(league["id"], season)
-            all_fixtures.extend(fixtures)
+    print("Zpracovávám výsledky...")
+    results = process_fixtures(fixtures)
 
-    print("Zpracovávám historická data...")
-    max_draws = process_fixtures(all_fixtures)
+    print("Identifikuji aktuální kola...")
+    current = get_current_rounds(results)
 
-    print("Načítám aktuální zápasy...")
-    current = get_current_rounds()
-
-    print("Generuji výstup...")
-    output = []
-    for (league, round_), values in current.items():
-        output.append({
-            "league": values["league"],
-            "country": values["country"],
-            "round": values["round"],
-            "draws_00_current": values["draws_00_current"],
-            "draws_00_max": max_draws.get(league, 0),
-            "matches_remaining": values["matches_remaining"]
-        })
-
+    print("Ukládám data do data.json...")
     with open("data.json", "w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2, ensure_ascii=False)
+        json.dump(current, f, indent=2, ensure_ascii=False)
 
-    print("Hotovo! Soubor data.json byl vytvořen.")
+    print("Hotovo!")
 
 if __name__ == "__main__":
     main()
