@@ -1,78 +1,113 @@
+
 import requests
 import json
-from datetime import date
+from collections import defaultdict
+from datetime import datetime
 
 API_KEY = "8bb57fb34476880013cbe2f37d283451"
-headers = {"x-apisports-key": API_KEY}
+HEADERS = {"x-apisports-key": API_KEY}
+BASE_URL = "https://v3.football.api-sports.io"
 
-# Pomocná funkce pro získání zápasů pro daný rok
-def get_fixtures_for_season(season):
-    url = f"https://v3.football.api-sports.io/fixtures?season={season}&status=FT"
-    response = requests.get(url, headers=headers)
-    return response.json().get("response", [])
+SEASONS = [2023, 2024, 2025]
 
-# Získání aktuálních zápasů (pro daný den)
-today = date.today().isoformat()
-url_today = f"https://v3.football.api-sports.io/fixtures?date={today}"
-fixtures_today = requests.get(url_today, headers=headers).json().get("response", [])
+def get_all_leagues():
+    response = requests.get(f"{BASE_URL}/leagues", headers=HEADERS)
+    leagues = response.json().get("response", [])
+    return [
+        {
+            "id": league["league"]["id"],
+            "name": league["league"]["name"],
+            "country": league["country"]["name"]
+        }
+        for league in leagues
+        if league["seasons"][-1]["year"] in SEASONS
+    ]
 
-# Získání historických dat pro sezóny 2023 a 2024
-fixtures_2023 = get_fixtures_for_season(2023)
-fixtures_2024 = get_fixtures_for_season(2024)
+def get_fixtures(league_id, season):
+    fixtures = []
+    page = 1
+    while True:
+        url = f"{BASE_URL}/fixtures?league={league_id}&season={season}&status=FT&page={page}"
+        response = requests.get(url, headers=HEADERS)
+        data = response.json().get("response", [])
+        if not data:
+            break
+        fixtures.extend(data)
+        page += 1
+    return fixtures
 
-# Pomocná funkce pro výpočet maximálních 0:0 pro každou ligu a kolo
-def calculate_max_zeros(fixtures):
-    stats = {}
-    for match in fixtures:
-        if match["goals"]["home"] == 0 and match["goals"]["away"] == 0:
-            league = match["league"]["name"]
-            round_ = match["league"]["round"]
-            key = (league, round_)
-            stats[key] = stats.get(key, 0) + 1
+def process_fixtures(fixtures):
+    counts = defaultdict(lambda: defaultdict(int))
+    for f in fixtures:
+        league_name = f["league"]["name"]
+        round_name = f["league"]["round"]
+        goals = f["goals"]
+        if goals["home"] == 0 and goals["away"] == 0:
+            counts[league_name][round_name] += 1
+    max_per_league = {
+        league: max(rounds.values()) for league, rounds in counts.items()
+    }
+    return max_per_league
 
-    # Najdeme maximum pro každou ligu napříč koly
-    max_draws_per_league = {}
-    for (league, round_), count in stats.items():
-        if league not in max_draws_per_league or count > max_draws_per_league[league]:
-            max_draws_per_league[league] = count
-    return max_draws_per_league
+def get_current_rounds():
+    url = f"{BASE_URL}/fixtures?next=300"
+    response = requests.get(url, headers=HEADERS)
+    fixtures = response.json().get("response", [])
+    current_data = {}
+    for f in fixtures:
+        league = f["league"]["name"]
+        country = f["league"]["country"]
+        round_ = f["league"]["round"]
+        key = (league, round_)
+        if key not in current_data:
+            current_data[key] = {
+                "league": league,
+                "country": country,
+                "round": round_,
+                "draws_00_current": 0,
+                "matches_remaining": 0
+            }
+        if f["fixture"]["status"]["short"] == "FT":
+            goals = f["goals"]
+            if goals["home"] == 0 and goals["away"] == 0:
+                current_data[key]["draws_00_current"] += 1
+        else:
+            current_data[key]["matches_remaining"] += 1
+    return current_data
 
-# Spočítáme historická maxima
-max_2023 = calculate_max_zeros(fixtures_2023)
-max_2024 = calculate_max_zeros(fixtures_2024)
+def main():
+    print("Stahuji seznam lig...")
+    leagues = get_all_leagues()
 
-# Sloučíme obě sezóny
-historical_max = {}
-for league in set(list(max_2023.keys()) + list(max_2024.keys())):
-    historical_max[league] = max(max_2023.get(league, 0), max_2024.get(league, 0))
+    print("Stahuji historické zápasy...")
+    all_fixtures = []
+    for league in leagues:
+        for season in SEASONS:
+            fixtures = get_fixtures(league["id"], season)
+            all_fixtures.extend(fixtures)
 
-# Výpočet pro aktuální den
-results = {}
-for match in fixtures_today:
-    if match["fixture"]["status"]["short"] != "FT":
-        continue
+    print("Zpracovávám historická data...")
+    max_draws = process_fixtures(all_fixtures)
 
-    league = match["league"]["name"]
-    round_ = match["league"]["round"]
-    goals = match["goals"]
+    print("Načítám aktuální zápasy...")
+    current = get_current_rounds()
 
-    key = (league, round_)
-    if key not in results:
-        results[key] = {"draws_0_0": 0}
+    print("Generuji výstup...")
+    output = []
+    for (league, round_), values in current.items():
+        output.append({
+            "league": values["league"],
+            "country": values["country"],
+            "round": values["round"],
+            "draws_00_current": values["draws_00_current"],
+            "draws_00_max": max_draws.get(league, 0),
+            "matches_remaining": values["matches_remaining"]
+        })
 
-    if goals["home"] == 0 and goals["away"] == 0:
-        results[key]["draws_0_0"] += 1
+    with open("data.json", "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
 
-# Převod do výstupní struktury
-output = []
-for (league, round_), data in results.items():
-    output.append({
-        "league": league,
-        "round": round_,
-        "draws_0_0": data["draws_0_0"],
-        "max_draws": historical_max.get(league, data["draws_0_0"])  # fallback = aktuální počet
-    })
+    print("Hotovo! Soubor data.json byl vytvořen.")
 
-# Uložení do JSON
-with open("data.json", "w", encoding="utf-8") as f:
-    json.dump(output, f, indent=2, ensure_ascii=False)
+if __name__ == "__main__":
+    main()
