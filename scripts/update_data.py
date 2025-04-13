@@ -17,7 +17,7 @@ fixtures = response.json().get("response", [])
 results = {}
 
 for match in fixtures:
-    league = match["league"]["name"]
+    league_name = f'{match["league"]["country"]["name"]} - {match["league"]["name"]}'
     round_ = match["league"]["round"]
     goals = match["goals"]
     status = match["fixture"]["status"]["short"]
