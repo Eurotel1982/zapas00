@@ -41,7 +41,7 @@ def process_data():
         round_number = round_name
 
         for match in fixtures:
-            league_name = match["league"]["name"]
+            league_name = f'{match["league"]["country"]["name"]} - {match["league"]["name"]}'
             status = match["fixture"]["status"]["short"]
             goals = match["goals"]
 
