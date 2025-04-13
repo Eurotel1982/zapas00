@@ -13,7 +13,9 @@ fetch('data.json')
       `;
       // Zvýraznění řádku, pokud už je dosažen maximální počet 0:0
       if (item.draws_0_0 === item.max_draws) {
-        row.style.backgroundColor = "#ffcccc";
+        row.style.backgroundColor = '#ffcccc'; // červená = dosaženo maxima  
+      } else if (item.draws_0_0 === item.max_draws - 1) {
+        row.style.backgroundColor = '#ccffcc'; // zelená = o 1 méně než maximum
       }
       table.appendChild(row);
     });
