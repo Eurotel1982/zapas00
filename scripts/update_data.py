@@ -1,47 +1,70 @@
 import requests
 import json
-from datetime import date
+from datetime import date, timedelta
 
 API_KEY = "8bb57fb34476880013cbe2f37d283451"
-headers = {
-    "x-apisports-key": API_KEY
-}
+headers = { "x-apisports-key": API_KEY }
 
-# Získání všech zápasů pro dnešní den
-today = date.today().isoformat()
-url = f"https://v3.football.api-sports.io/fixtures?date=2025-04-13"
-response = requests.get(url, headers=headers)
-fixtures = response.json().get("response", [])
-
-# Výpočet výsledků 0:0 podle ligy a kola
+# Sezóny, které chceme analyzovat (historie + současnost)
+seasons = [2023, 2024, 2025]
 results = {}
 
-for match in fixtures:
-    league_raw = match.get("league")
-    league_name = match["league"]["name"]
-    round_ = match["league"]["round"]
-    goals = match["goals"]
-    status = match["fixture"]["status"]["short"]
+for season in seasons:
+    url = f"https://v3.football.api-sports.io/fixtures?season={season}&status=FT"
+    response = requests.get(url, headers=headers)
+    fixtures = response.json().get("response", [])
 
-    if status != "FT":
-        continue
+    for match in fixtures:
+        league = match.get("league", {})
+        country = league.get("country", "Neznámý stát")
+        league_name = league.get("name", "Neznámá liga")
+        round_ = league.get("round", "Neznámé kolo")
+        goals = match.get("goals", {})
 
-    key = (league_name, round_)
-    if key not in results:
-        results[key] = {"draws_0_0": 0, "matches": 0}
+        if goals.get("home") == 0 and goals.get("away") == 0:
+            key = (country + " – " + league_name, round_)
+            if key not in results:
+                results[key] = 0
+            results[key] += 1
 
-    results[key]["matches"] += 1
-    if goals["home"] == 0 and goals["away"] == 0:
-        results[key]["draws_0_0"] += 1
+# Najdeme maximum 0:0 v rámci každé ligy (napříč koly)
+max_draws_per_league = {}
+for (league, round_), draws in results.items():
+    if league not in max_draws_per_league:
+        max_draws_per_league[league] = draws
+    else:
+        max_draws_per_league[league] = max(max_draws_per_league[league], draws)
 
-# Převod na výstupní strukturu
+# Výpočet počtu 0:0 v aktuálním kole (pouze pro dnešní den)
+today = date.today().isoformat()
+url_today = f"https://v3.football.api-sports.io/fixtures?date={today}&status=FT"
+response_today = requests.get(url_today, headers=headers)
+fixtures_today = response_today.json().get("response", [])
+
+current_results = {}
+
+for match in fixtures_today:
+    league = match.get("league", {})
+    country = league.get("country", "Neznámý stát")
+    league_name = league.get("name", "Neznámá liga")
+    round_ = league.get("round", "Neznámé kolo")
+    goals = match.get("goals", {})
+
+    if goals.get("home") == 0 and goals.get("away") == 0:
+        key = (country + " – " + league_name, round_)
+        if key not in current_results:
+            current_results[key] = 0
+        current_results[key] += 1
+
+# Sestavení finálního výstupu
 output = []
-for (league, round_), data in results.items():
+for (league, round_), draws in current_results.items():
+    max_draws = max_draws_per_league.get(league, 3)
     output.append({
         "league": league,
         "round": round_,
-        "draws_0_0": data["draws_0_0"],
-        "max_draws": 3  # prozatím fixně
+        "draws_0_0": draws,
+        "max_draws": max_draws
     })
 
 # Uložení do data.json
