@@ -1870,5 +1870,11 @@
     "round": "Championship Round - 2",
     "draws_0_0": 0,
     "max_draws": 3
+  },
+  {
+    "league": "2. SNL",
+    "round": "Regular Season - 23",
+    "draws_0_0": 0,
+    "max_draws": 3
   }
 ]
