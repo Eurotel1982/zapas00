@@ -21,6 +21,8 @@ def get_current_round(league_id):
 def get_fixtures(league_id, round_name):
     url = f"https://v3.football.api-sports.io/fixtures?league={league_id}&season=2023&round={round_name}"
     response = requests.get(url, headers=headers)
+    print("STATUS:", response.status_code)
+    print("ODPOVĚĎ:", response.text)
     return response.json().get("response", [])
 
 def process_data():
