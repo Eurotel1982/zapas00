@@ -1,10 +1,10 @@
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
-    const table = document.querySelector("tbody");
-
-    // Seřadíme data podle počtu 0:0 v tomto kole (sestupně)
+    // Řazení podle počtu 0:0 v aktuálním kole (sestupně)
     data.sort((a, b) => b.draws_0_0 - a.draws_0_0);
+
+    const table = document.querySelector("tbody");
 
     data.forEach(item => {
       const row = document.createElement("tr");
@@ -15,11 +15,11 @@ fetch('data.json')
         <td>${item.max_draws}</td>
       `;
 
-      // Barevné zvýraznění podle počtu remíz
+      // Barevné zvýraznění
       if (item.draws_0_0 === item.max_draws) {
-        row.style.backgroundColor = '#ffcccc'; // červená
+        row.style.backgroundColor = '#ffcccc'; // červená = dosaženo maxima
       } else if (item.draws_0_0 === item.max_draws - 1) {
-        row.style.backgroundColor = '#ccffcc'; // zelená
+        row.style.backgroundColor = '#ccffcc'; // zelená = o 1 méně než maximum
       }
 
       table.appendChild(row);
