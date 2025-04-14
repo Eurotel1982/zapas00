@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 API_KEY = "8bb57fb34476880013cbe2f37d283451"
 
 # Načti mapu lig a států
-with open("league_map.json", "r", encoding="utf-8") as f:
+with open("scripts/league_map.json", "r", encoding="utf-8") as f:
     league_map = json.load(f)
 
 # Dnešní datum a den zpět
