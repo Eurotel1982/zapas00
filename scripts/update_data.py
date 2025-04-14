@@ -1,13 +1,9 @@
-
 import requests
 import json
 from datetime import datetime, timedelta
+import os
 
-API_KEY = "8bb57fb34476880013cbe2f37d283451"
-
-# Načti mapu lig a států
-with open("scripts/league_map.json", "r", encoding="utf-8") as f:
-    league_map = json.load(f)
+API_KEY = os.getenv("PERSONAL_TOKEN")
 
 # Dnešní datum a den zpět
 today = datetime.utcnow().date()
@@ -27,15 +23,24 @@ fixtures = response.json().get("response", [])
 results = {}
 
 for match in fixtures:
-    league_id = str(match["league"]["id"])
-    league_name = league_map.get(league_id, f"Neznámý stát - {match['league']['name']}")
-
     if match["goals"]["home"] == 0 and match["goals"]["away"] == 0 and match["fixture"]["status"]["short"] == "FT":
-        if league_name not in results:
-            results[league_name] = 1
-        else:
-            results[league_name] += 1
+        league_name = match['league']['name']
+        round_name = match['league'].get('round', '')
+
+        key = (league_name, round_name)
+        if key not in results:
+            results[key] = 0
+        results[key] += 1
+
+# Výstupní struktura
+output = []
+for (league_name, round_name), count in results.items():
+    output.append({
+        "league": league_name,
+        "round": round_name,
+        "draws_0_0": count
+    })
 
 # Ulož jako data.json
 with open("data.json", "w", encoding="utf-8") as f:
-    json.dump(results, f, ensure_ascii=False, indent=2)
+    json.dump(output, f, ensure_ascii=False, indent=2)
