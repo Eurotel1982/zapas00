@@ -1,30 +1,23 @@
-fetch('data.json')
+fetch("data.json")
   .then(response => response.json())
   .then(data => {
-    // Řazení podle počtu 0:0 v aktuálním kole (sestupně)
-    data.sort((a, b) => b.draws_0_0 - a.draws_0_0);
-
-    const table = document.querySelector("tbody");
+    const tableBody = document.querySelector("#results-table tbody");
 
     data.forEach(item => {
       const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>${item.league}</td>
-        <td>${item.round}</td>
-        <td>${item.draws_0_0}</td>
-        <td>${item.max_draws}</td>
-      `;
 
-      // Barevné zvýraznění
-      if (item.draws_0_0 === item.max_draws) {
-        row.style.backgroundColor = '#ffcccc'; // červená = dosaženo maxima
-      } else if (item.draws_0_0 === item.max_draws - 1) {
-        row.style.backgroundColor = '#ccffcc'; // zelená = o 1 méně než maximum
-      }
+      const leagueCell = document.createElement("td");
+      leagueCell.textContent = item.league;
+      row.appendChild(leagueCell);
 
-      table.appendChild(row);
+      const roundCell = document.createElement("td");
+      roundCell.textContent = item.round;
+      row.appendChild(roundCell);
+
+      const drawsCell = document.createElement("td");
+      drawsCell.textContent = item["draws_0_0"];
+      row.appendChild(drawsCell);
+
+      tableBody.appendChild(row);
     });
-  })
-  .catch(error => {
-    console.error("Chyba při načítání dat:", error);
   });
