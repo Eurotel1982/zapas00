@@ -1,0 +1,32 @@
+[
+  {
+    "league": "League Two",
+    "round": "Regular Season - 5",
+    "draws_0_0": 4
+  },
+  {
+    "league": "Serie D - Girone C",
+    "round": "Group C - 35",
+    "draws_0_0": 3
+  },
+  {
+    "league": "Tercera División RFEF - Group 5",
+    "round": "Group 5 - 30",
+    "draws_0_0": 3
+  },
+  {
+    "league": "Serie A",
+    "round": "Regular Season - 32",
+    "draws_0_0": 2
+  },
+  {
+    "league": "Major League Soccer",
+    "round": "Regular Season - 12",
+    "draws_0_0": 1
+  },
+  {
+    "league": "J2 League",
+    "round": "Regular Season - 9",
+    "draws_0_0": 1
+  }
+]

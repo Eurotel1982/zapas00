@@ -3,7 +3,6 @@ fetch("data.json")
   .then(data => {
     const tableBody = document.querySelector("#results-table tbody");
 
-    // Seřadit data podle počtu 0:0 sestupně
     data.sort((a, b) => b["draws_0_0"] - a["draws_0_0"]);
 
     data.forEach(item => {
