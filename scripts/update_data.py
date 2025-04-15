@@ -5,40 +5,38 @@ import os
 
 API_KEY = os.getenv("PERSONAL_TOKEN")
 
-# Dnešní datum a tři dny zpět
+# Rozsah posledních 4 dnů (včetně dneška)
 today = datetime.utcnow().date()
 start_date = today - timedelta(days=3)
 
-# URL s filtrem podle data
-url = f"https://v3.football.api-sports.io/fixtures?from={start_date}&to={today}"
-headers = {
-    "x-apisports-key": API_KEY
-}
-
-response = requests.get(url, headers=headers)
-fixtures = response.json().get("response", [])
-
-# >>> ULOŽENÍ všech stažených zápasů pro ladění
-with open("all_matches.json", "w", encoding="utf-8") as f:
-    json.dump(fixtures, f, ensure_ascii=False, indent=2)
-
-# >>> Filtruj výsledky 0:0 podle soutěže a kola
 results = {}
-for match in fixtures:
-    if (
-        match["goals"]["home"] == 0 and
-        match["goals"]["away"] == 0 and
-        match["fixture"]["status"]["short"] == "FT"
-    ):
-        league_name = match["league"]["name"]
-        round_name = match["league"].get("round", "")
-        key = (league_name, round_name)
 
-        if key not in results:
-            results[key] = 0
-        results[key] += 1
+# Pro každý den v rozsahu
+for i in range(4):
+    date = start_date + timedelta(days=i)
+    url = f"https://v3.football.api-sports.io/fixtures?date={date}"
 
-# >>> Převod do výstupní struktury
+    headers = {
+        "x-apisports-key": API_KEY
+    }
+
+    response = requests.get(url, headers=headers)
+    fixtures = response.json().get("response", [])
+
+    for match in fixtures:
+        if (match["goals"]["home"] == 0 and
+            match["goals"]["away"] == 0 and
+            match["fixture"]["status"]["short"] == "FT"):
+
+            league_name = match["league"]["name"]
+            round_name = match["league"].get("round", "")
+
+            key = (league_name, round_name)
+            if key not in results:
+                results[key] = 0
+            results[key] += 1
+
+# Výstupní struktura
 output = []
 for (league_name, round_name), count in results.items():
     output.append({
@@ -47,6 +45,6 @@ for (league_name, round_name), count in results.items():
         "draws_0_0": count
     })
 
-# >>> Ulož jako data.json
+# Ulož jako data.json
 with open("data.json", "w", encoding="utf-8") as f:
     json.dump(output, f, ensure_ascii=False, indent=2)
