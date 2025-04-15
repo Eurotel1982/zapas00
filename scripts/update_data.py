@@ -11,22 +11,21 @@ yesterday = today - timedelta(days=1)
 
 # URL s filtrem podle data
 url = f"https://v3.football.api-sports.io/fixtures?from={yesterday}&to={today}"
-
-headers = {
-    "x-apisports-key": API_KEY
-}
+headers = { "x-apisports-key": API_KEY }
 
 response = requests.get(url, headers=headers)
 fixtures = response.json().get("response", [])
 
-# Výsledky 0:0 podle lig
-results = {}
+# >>> LADĚNÍ – ulož všechna získaná data (pro kontrolu)
+with open("all_matches.json", "w", encoding="utf-8") as debug_file:
+    json.dump(fixtures, debug_file, ensure_ascii=False, indent=2)
 
+# >>> Filtruj výsledky 0:0
+results = {}
 for match in fixtures:
     if match["goals"]["home"] == 0 and match["goals"]["away"] == 0 and match["fixture"]["status"]["short"] == "FT":
         league_name = match['league']['name']
         round_name = match['league'].get('round', '')
-
         key = (league_name, round_name)
         if key not in results:
             results[key] = 0
