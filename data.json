@@ -58,5 +58,10 @@
     "league": "Premier League",
     "round": "Regular Season - 24",
     "draws_0_0": 2
+  },
+  {
+    "league": "Liga II",
+    "round": "Promotion Round - 4",
+    "draws_0_0": 1
   }
 ]
