@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "league": "Victoria NPL",
+    "round": "Regular Season - 10",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Second League",
+    "round": "Regular Season - 30",
+    "draws_0_0": 2
+  },
+  {
+    "league": "Campionato Primavera - 1",
+    "round": "Regular Season - 33",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Liga Leumit",
+    "round": "Relegation Round - 2",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Division 1",
+    "round": "Regular Season - 29",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Allsvenskan",
+    "round": "Regular Season - 3",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Serie C - Girone B",
+    "round": "Girone B - 36",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Liga Femenina",
+    "round": "Group Stage - 8",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Division Intermedia",
+    "round": "Regular Season - 3",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Liga Profesional Argentina",
+    "round": "1st Phase - 13",
+    "draws_0_0": 2
+  }
+]
