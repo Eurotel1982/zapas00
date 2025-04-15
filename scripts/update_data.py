@@ -1,45 +1,61 @@
 import requests
 import json
 from datetime import datetime, timedelta
-import os
+from collections import defaultdict
 
-API_KEY = os.getenv("PERSONAL_TOKEN")
+# API klíč
+API_KEY = "8bb57fb34476880013cbe2f37d283451"
+URL = "https://v3.football.api-sports.io/fixtures"
 
-# Dnešní datum a den zpět
+# Dny, které bereme v potaz (poslední 4 včetně dneška)
 today = datetime.utcnow().date()
-yesterday = today - timedelta(days=1)
+start_date = today - timedelta(days=3)
+end_date = today
 
-# URL s filtrem podle data
-url = f"https://v3.football.api-sports.io/fixtures?from={yesterday}&to={today}"
-headers = { "x-apisports-key": API_KEY }
+# Připravíme požadavek
+params = {
+    "from": start_date.isoformat(),
+    "to": end_date.isoformat()
+}
+headers = {
+    "x-apisports-key": API_KEY,
+    "accept": "application/json"
+}
 
-response = requests.get(url, headers=headers)
+# Volání API
+response = requests.get(URL, headers=headers, params=params)
 fixtures = response.json().get("response", [])
 
-# >>> LADĚNÍ – ulož všechna získaná data (pro kontrolu)
-with open("all_matches.json", "w", encoding="utf-8") as debug_file:
-    json.dump(fixtures, debug_file, ensure_ascii=False, indent=2)
+# Filtrování 0:0 zápasů, které skončily
+zero_zero_fixtures = [
+    f for f in fixtures
+    if f["goals"]["home"] == 0 and f["goals"]["away"] == 0 and f["fixture"]["status"]["short"] == "FT"
+]
 
-# >>> Filtruj výsledky 0:0
-results = {}
-for match in fixtures:
-    if match["goals"]["home"] == 0 and match["goals"]["away"] == 0 and match["fixture"]["status"]["short"] == "FT":
-        league_name = match['league']['name']
-        round_name = match['league'].get('round', '')
-        key = (league_name, round_name)
-        if key not in results:
-            results[key] = 0
-        results[key] += 1
+# Seskupíme zápasy podle ligy a kola
+summary = defaultdict(lambda: {"league": "", "round": "", "count_0_0": 0})
 
-# Výstupní struktura
-output = []
-for (league_name, round_name), count in results.items():
-    output.append({
-        "league": league_name,
-        "round": round_name,
-        "draws_0_0": count
+for f in zero_zero_fixtures:
+    league_id = f["league"]["id"]
+    league_name = f["league"]["name"]
+    round_name = f["league"]["round"]
+
+    key = (league_id, round_name)
+    summary[key]["league"] = league_name
+    summary[key]["round"] = round_name
+    summary[key]["count_0_0"] += 1
+
+# Převedeme do seznamu a uložíme
+output_data = []
+
+for (league_id, round_name), data in summary.items():
+    output_data.append({
+        "league_id": league_id,
+        "league": data["league"],
+        "round": data["round"],
+        "count_0_0": data["count_0_0"]
     })
 
-# Ulož jako data.json
+# Výstupní soubor
 with open("data.json", "w", encoding="utf-8") as f:
-    json.dump(output, f, ensure_ascii=False, indent=2)
+    json.dump(output_data, f, ensure_ascii=False, indent=2)
