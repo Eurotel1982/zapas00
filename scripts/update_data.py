@@ -3,7 +3,7 @@ import json
 from datetime import datetime, timedelta
 import os
 
-API_KEY = os.getenv("PERSONAL_TOKEN")
+API_KEY = "8ba3bf2f91cd69669320ac295c42eef3"
 
 # Rozsah posledních 4 dnů (včetně dneška)
 today = datetime.utcnow().date()
