@@ -7,7 +7,7 @@
   {
     "league": "Premier League",
     "round": "Regular Season - 24",
-    "draws_0_0": 2
+    "draws_0_0": 3
   },
   {
     "league": "Liga II",
@@ -42,6 +42,16 @@
   {
     "league": "Liga Revelação U23",
     "round": "Lower Table Round - 12",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Gamma Ethniki - Group 4",
+    "round": "Group 4 - 33",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Azadegan League",
+    "round": "Regular Season - 29",
     "draws_0_0": 1
   }
 ]
