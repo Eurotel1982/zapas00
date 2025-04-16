@@ -28,5 +28,10 @@
     "league": "Liga MX",
     "round": "Clausura - 16",
     "draws_0_0": 1
+  },
+  {
+    "league": "Primera A",
+    "round": "Apertura - 14",
+    "draws_0_0": 1
   }
 ]
