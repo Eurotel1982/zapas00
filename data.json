@@ -53,5 +53,20 @@
     "league": "Azadegan League",
     "round": "Regular Season - 29",
     "draws_0_0": 1
+  },
+  {
+    "league": "League Cup",
+    "round": "Group Stage - 5",
+    "draws_0_0": 1
+  },
+  {
+    "league": "FNL",
+    "round": "Regular Season - 23",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Coppa",
+    "round": "Semi-finals",
+    "draws_0_0": 1
   }
 ]
