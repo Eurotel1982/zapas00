@@ -73,5 +73,15 @@
     "league": "1. Division",
     "round": "Promotion Round - 4",
     "draws_0_0": 1
+  },
+  {
+    "league": "Segunda División RFEF - Group 1",
+    "round": "Group 1 - 29",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Tercera División RFEF - Group 15",
+    "round": "Group 15 - 31",
+    "draws_0_0": 1
   }
 ]
