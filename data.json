@@ -82,11 +82,46 @@
   {
     "league": "Tercera División RFEF - Group 15",
     "round": "Group 15 - 31",
-    "draws_0_0": 1
+    "draws_0_0": 4
   },
   {
     "league": "Cup",
     "round": "Premier League Path - Semi-finals",
+    "draws_0_0": 1
+  },
+  {
+    "league": "2. Liga Interregional - Group 3",
+    "round": "Group 3 - 21",
+    "draws_0_0": 2
+  },
+  {
+    "league": "2. Liga Interregional - Group 2",
+    "round": "Group 2 - 21",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Úrvalsdeild Women",
+    "round": "Regular Season - 1",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Reserve League",
+    "round": "1st Phase - 9",
+    "draws_0_0": 2
+  },
+  {
+    "league": "Brasileiro U20 A",
+    "round": "1st Phase - 6",
+    "draws_0_0": 2
+  },
+  {
+    "league": "Brasileiro Women",
+    "round": "1st Phase - 5",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Brasileiro U20 B",
+    "round": "1st Phase - 4",
     "draws_0_0": 1
   }
 ]
