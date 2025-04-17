@@ -62,7 +62,7 @@
   {
     "league": "Tercera División RFEF - Group 15",
     "round": "Group 15 - 31",
-    "draws_0_0": 4
+    "draws_0_0": 5
   },
   {
     "league": "Cup",
@@ -107,6 +107,21 @@
   {
     "league": "Primera División",
     "round": "Clausura - 18",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Tercera División RFEF - Group 18",
+    "round": "Group 18 - 31",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Tercera División RFEF - Group 8",
+    "round": "Group 8 - 33",
+    "draws_0_0": 2
+  },
+  {
+    "league": "Denmark Series - Promotion Round",
+    "round": "Promotion Group 2 - 2",
     "draws_0_0": 1
   }
 ]
