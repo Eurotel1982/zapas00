@@ -47,7 +47,7 @@
   {
     "league": "Premier League",
     "round": "Regular Season - 14",
-    "draws_0_0": 1
+    "draws_0_0": 3
   },
   {
     "league": "1. Division",
@@ -122,6 +122,36 @@
   {
     "league": "Denmark Series - Promotion Round",
     "round": "Promotion Group 2 - 2",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Serie D - Girone B",
+    "round": "Group B - 36",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Serie D - Girone C",
+    "round": "Group C - 36",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Serie D - Girone D",
+    "round": "Group D - 32",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Serie D - Girone E",
+    "round": "Group E - 32",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Serie D - Girone F",
+    "round": "Group F - 32",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Persian Gulf Pro League",
+    "round": "Regular Season - 27",
     "draws_0_0": 1
   }
 ]
