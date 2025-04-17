@@ -1,35 +1,5 @@
 [
   {
-    "league": "Liga Profesional Argentina",
-    "round": "1st Phase - 13",
-    "draws_0_0": 2
-  },
-  {
-    "league": "Premier League",
-    "round": "Regular Season - 24",
-    "draws_0_0": 3
-  },
-  {
-    "league": "Liga II",
-    "round": "Promotion Round - 4",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Premier League",
-    "round": "Regular Season - 14",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Non League Div One - Isthmian South Central",
-    "round": "Isthmian South Central - 37",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Primera Division",
-    "round": "Clausura - 13",
-    "draws_0_0": 1
-  },
-  {
     "league": "Liga MX",
     "round": "Clausura - 16",
     "draws_0_0": 1
@@ -42,6 +12,11 @@
   {
     "league": "Liga Revelação U23",
     "round": "Lower Table Round - 12",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Premier League",
+    "round": "Regular Season - 24",
     "draws_0_0": 1
   },
   {
@@ -112,6 +87,16 @@
   {
     "league": "Brasileiro U20 B",
     "round": "1st Phase - 4",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Liga Nacional",
+    "round": "Clausura - 19",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Serie B",
+    "round": "Regular Season - 3",
     "draws_0_0": 1
   }
 ]
