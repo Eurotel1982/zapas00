@@ -117,7 +117,7 @@
   {
     "league": "Tercera División RFEF - Group 8",
     "round": "Group 8 - 33",
-    "draws_0_0": 2
+    "draws_0_0": 1
   },
   {
     "league": "Denmark Series - Promotion Round",
@@ -212,6 +212,16 @@
   {
     "league": "Tercera División RFEF - Group 6",
     "round": "Group 6 - 31",
+    "draws_0_0": 1
+  },
+  {
+    "league": "2. Liga Interregional - Group 3",
+    "round": "Group 3 - 21",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Tercera División RFEF - Group 11",
+    "round": "Group 11 - 31",
     "draws_0_0": 1
   }
 ]
