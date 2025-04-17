@@ -167,7 +167,7 @@
   {
     "league": "Third League - Southeast",
     "round": "Southeast - 30",
-    "draws_0_0": 6
+    "draws_0_0": 1
   },
   {
     "league": "Tercera División RFEF - Group 17",
@@ -183,5 +183,15 @@
     "league": "Liga Leumit",
     "round": "Relegation Round - 3",
     "draws_0_0": 3
+  },
+  {
+    "league": "Pro League",
+    "round": "Regular Season - 28",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Tercera División RFEF - Group 2",
+    "round": "Group 2 - 31",
+    "draws_0_0": 1
   }
 ]
