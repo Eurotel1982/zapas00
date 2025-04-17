@@ -32,7 +32,7 @@
   {
     "league": "League Cup",
     "round": "Group Stage - 5",
-    "draws_0_0": 1
+    "draws_0_0": 2
   },
   {
     "league": "FNL",
@@ -192,6 +192,26 @@
   {
     "league": "Tercera División RFEF - Group 2",
     "round": "Group 2 - 31",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Division 2 - Norrland",
+    "round": "Norrland - 2",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Oberliga - Nordost-Nord",
+    "round": "Nordost-Nord - 17",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Oberliga - Niedersachsen",
+    "round": "Niedersachsen - 13",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Tercera División RFEF - Group 6",
+    "round": "Group 6 - 31",
     "draws_0_0": 1
   }
 ]
