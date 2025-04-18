@@ -158,5 +158,25 @@
     "league": "Liga MX Femenil",
     "round": "Clausura - 17",
     "draws_0_0": 1
+  },
+  {
+    "league": "Liga II",
+    "round": "Promotion Round - 5",
+    "draws_0_0": 1
+  },
+  {
+    "league": "3. liga - CFL B",
+    "round": "ČFL B - 24",
+    "draws_0_0": 1
+  },
+  {
+    "league": "3. liga - CFL A",
+    "round": "ČFL A - 24",
+    "draws_0_0": 1
+  },
+  {
+    "league": "3. liga - MSFL",
+    "round": "MSFL - 24",
+    "draws_0_0": 1
   }
 ]
