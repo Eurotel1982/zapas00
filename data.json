@@ -1,100 +1,5 @@
 [
   {
-    "league": "Liga MX",
-    "round": "Clausura - 16",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Primera A",
-    "round": "Apertura - 14",
-    "draws_0_0": 2
-  },
-  {
-    "league": "Liga Revelação U23",
-    "round": "Lower Table Round - 12",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Premier League",
-    "round": "Regular Season - 24",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Gamma Ethniki - Group 4",
-    "round": "Group 4 - 33",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Azadegan League",
-    "round": "Regular Season - 29",
-    "draws_0_0": 1
-  },
-  {
-    "league": "League Cup",
-    "round": "Group Stage - 5",
-    "draws_0_0": 2
-  },
-  {
-    "league": "FNL",
-    "round": "Regular Season - 23",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Coppa",
-    "round": "Semi-finals",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Premier League",
-    "round": "Regular Season - 14",
-    "draws_0_0": 1
-  },
-  {
-    "league": "1. Division",
-    "round": "Promotion Round - 4",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Segunda División RFEF - Group 1",
-    "round": "Group 1 - 29",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Tercera División RFEF - Group 15",
-    "round": "Group 15 - 31",
-    "draws_0_0": 5
-  },
-  {
-    "league": "Cup",
-    "round": "Premier League Path - Semi-finals",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Úrvalsdeild Women",
-    "round": "Regular Season - 1",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Reserve League",
-    "round": "1st Phase - 9",
-    "draws_0_0": 2
-  },
-  {
-    "league": "Brasileiro U20 A",
-    "round": "1st Phase - 6",
-    "draws_0_0": 2
-  },
-  {
-    "league": "Brasileiro Women",
-    "round": "1st Phase - 5",
-    "draws_0_0": 1
-  },
-  {
-    "league": "Brasileiro U20 B",
-    "round": "1st Phase - 4",
-    "draws_0_0": 1
-  },
-  {
     "league": "Liga Nacional",
     "round": "Clausura - 19",
     "draws_0_0": 1
@@ -105,8 +10,18 @@
     "draws_0_0": 1
   },
   {
+    "league": "Primera A",
+    "round": "Apertura - 14",
+    "draws_0_0": 1
+  },
+  {
     "league": "Primera División",
     "round": "Clausura - 18",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Tercera División RFEF - Group 15",
+    "round": "Group 15 - 31",
     "draws_0_0": 1
   },
   {
@@ -215,8 +130,28 @@
     "draws_0_0": 1
   },
   {
+    "league": "League Cup",
+    "round": "Group Stage - 5",
+    "draws_0_0": 1
+  },
+  {
     "league": "Tercera División RFEF - Group 11",
     "round": "Group 11 - 31",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Primera División",
+    "round": "Apertura - 12",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Primera División",
+    "round": "Apertura - 9",
+    "draws_0_0": 1
+  },
+  {
+    "league": "Liga MX Femenil",
+    "round": "Clausura - 17",
     "draws_0_0": 1
   }
 ]
