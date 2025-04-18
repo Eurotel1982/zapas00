@@ -16,6 +16,8 @@ jobs:
         run: |
           echo "Spouštím update_data.py"
           python3 scripts/update_data.py
+          echo "Spouštím update_halftime_data.py"
+          python3 scripts/update_halftime_data.py
 
       - name: Commit and push if changes
         env:
