@@ -5,74 +5,71 @@ import os
 
 API_KEY = os.getenv("PERSONAL_TOKEN")
 
+# Dny zpět
 today = datetime.utcnow().date()
-start_date = today - timedelta(days=3)  # 4 dny včetně dneška
+days_back = 3
+dates = [(today - timedelta(days=i)).isoformat() for i in range(days_back + 1)]
 
-url = f"https://v3.football.api-sports.io/fixtures?from={start_date}&to={today}"
-headers = {
-    "x-apisports-key": API_KEY
-}
+# Sběr všech zápasů
+fixtures = []
+for date in dates:
+    url = f"https://v3.football.api-sports.io/fixtures?date={date}"
+    headers = {"x-apisports-key": API_KEY}
+    response = requests.get(url, headers=headers)
+    daily = response.json().get("response", [])
+    fixtures.extend(daily)
 
-response = requests.get(url, headers=headers)
-fixtures = response.json().get("response", [])
-
-# --- KONEČNÉ VÝSLEDKY 0:0 ---
-results = {}
+# Počet remíz 0:0 na konci zápasu (fulltime)
+fulltime_results = {}
 for match in fixtures:
-    if (match["goals"]["home"] == 0 and match["goals"]["away"] == 0 
-        and match["fixture"]["status"]["short"] == "FT"):
+    if (
+        match["goals"]["home"] == 0
+        and match["goals"]["away"] == 0
+        and match["fixture"]["status"]["short"] == "FT"
+    ):
         league = match["league"]["name"]
-        round_ = match["league"].get("round", "")
-        key = (league, round_)
-        results[key] = results.get(key, 0) + 1
+        round_name = match["league"].get("round", "")
+        key = (league, round_name)
+        fulltime_results[key] = fulltime_results.get(key, 0) + 1
 
-fulltime_output = []
-for (league, round_), count in results.items():
-    fulltime_output.append({
-        "league": league,
-        "round": round_,
-        "draws_0_0": count
-    })
-
-# --- SÉRIE POLOČASŮ 0:0 ---
+# Sběr sérií poločasových remíz v rámci jednoho kola
 halftime_series = {}
 for match in fixtures:
-    if match["fixture"]["status"]["short"] != "FT":
-        continue
-
-    league = match["league"]["name"]
-    round_ = match["league"].get("round", "")
-    halftime_home = match["score"]["halftime"]["home"]
-    halftime_away = match["score"]["halftime"]["away"]
-
-    key = (league, round_)
-    if key not in halftime_series:
-        halftime_series[key] = []
-
-    halftime_series[key].append((halftime_home == 0 and halftime_away == 0))
-
-# Najdi max sérii 0:0 poločasů
-halftime_output = []
-for (league, round_), series in halftime_series.items():
-    max_streak = 0
-    current = 0
-    for is_draw in series:
-        if is_draw:
-            current += 1
-            max_streak = max(max_streak, current)
+    if match["fixture"]["status"]["short"] == "FT":
+        league = match["league"]["name"]
+        round_name = match["league"].get("round", "")
+        halftime = match.get("score", {}).get("halftime", {})
+        if halftime.get("home") == 0 and halftime.get("away") == 0:
+            key = (league, round_name)
+            halftime_series.setdefault(key, []).append(1)
         else:
-            current = 0
-    halftime_output.append({
-        "league": league,
-        "round": round_,
-        "max_halftime_0_0_series": max_streak
-    })
+            halftime_series.setdefault(key, []).append(0)
 
-# --- ULOŽ VÝSTUP ---
-final_output = {
-    "fulltime_draws": fulltime_output,
-    "halftime_draws_series": halftime_output
+# Zjisti max. sérii 0:0 poločasů v řadě
+halftime_streaks = {}
+for key, series in halftime_series.items():
+    max_streak = streak = 0
+    for val in series:
+        if val == 1:
+            streak += 1
+            max_streak = max(max_streak, streak)
+        else:
+            streak = 0
+    if max_streak > 0:
+        halftime_streaks[key] = max_streak
+
+# Výstup pro JSON
+output = {
+    "fulltime_draws": [
+        {"league": league, "round": round_name, "draws_0_0": count}
+        for (league, round_name), count in fulltime_results.items()
+    ],
+    "halftime_draws_series": [
+        {"league": league, "round": round_name, "series_0_0": streak}
+        for (league, round_name), streak in halftime_streaks.items()
+    ]
 }
 
+# Uložení
 with open("data.json", "w", encoding="utf-8") as f:
-    json.dump(final_output, f, ensure_ascii=False, indent=2)
+    json.dump(output, f, ensure_ascii=False, indent=2)
