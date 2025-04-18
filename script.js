@@ -1,11 +1,13 @@
 fetch("data.json")
   .then(response => response.json())
   .then(data => {
-    const tableBody = document.querySelector("#results-table tbody");
+    const halftimeData = data["halftime_draws_series"];
 
-    data.sort((a, b) => b["draws_0_0"] - a["draws_0_0"]);
+    const halftimeTableBody = document.querySelector("#halftime-table tbody");
 
-    data.forEach(item => {
+    halftimeData.sort((a, b) => b.series_count - a.series_count);
+
+    halftimeData.forEach(item => {
       const row = document.createElement("tr");
 
       const leagueCell = document.createElement("td");
@@ -16,10 +18,10 @@ fetch("data.json")
       roundCell.textContent = item.round;
       row.appendChild(roundCell);
 
-      const drawsCell = document.createElement("td");
-      drawsCell.textContent = item["draws_0_0"];
-      row.appendChild(drawsCell);
+      const seriesCell = document.createElement("td");
+      seriesCell.textContent = item.series_count;
+      row.appendChild(seriesCell);
 
-      tableBody.appendChild(row);
+      halftimeTableBody.appendChild(row);
     });
   });
