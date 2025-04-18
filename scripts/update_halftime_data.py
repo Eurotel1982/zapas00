@@ -5,58 +5,57 @@ import os
 
 API_KEY = os.getenv("PERSONAL_TOKEN")
 
-# Dny od dneška zpět
+# Poslední 4 dny včetně dneška
 today = datetime.utcnow().date()
 start_date = today - timedelta(days=3)
 
 url = f"https://v3.football.api-sports.io/fixtures?from={start_date}&to={today}"
-
-headers = {
-    "x-apisports-key": API_KEY
-}
+headers = { "x-apisports-key": API_KEY }
 
 response = requests.get(url, headers=headers)
 fixtures = response.json().get("response", [])
 
-# Uložení všech zápasů pro ladění
-with open("all_matches.json", "w", encoding="utf-8") as f:
-    json.dump(fixtures, f, ensure_ascii=False, indent=2)
+# >>> DEBUG výpis do souboru
+with open("debug_halftime.json", "w", encoding="utf-8") as debug_file:
+    json.dump(fixtures, debug_file, ensure_ascii=False, indent=2)
 
-# Počítání sérií 0:0 v poločase
-results = {}
-
+# >>> VÝPOČET: Série 0:0 v poločase v jednom kole
+series = {}
 for match in fixtures:
-    if match["fixture"]["status"]["short"] != "FT":
+    if match["status"]["short"] != "FT":
         continue
 
-    halftime_goals = match.get("goals", {}).get("halftime", {})
-    if halftime_goals.get("home") == 0 and halftime_goals.get("away") == 0:
-        league = match["league"]["name"]
-        round_ = match["league"].get("round", "")
-        key = (league, round_)
+    halftime = match.get("score", {}).get("halftime", {})
+    if halftime.get("home") != 0 or halftime.get("away") != 0:
+        continue
 
-        if key not in results:
-            results[key] = 1
-        else:
-            results[key] += 1
+    league_name = match["league"]["name"]
+    round_name = match["league"].get("round", "")
+    key = (league_name, round_name)
 
-# Výstupní pole (zatím bez podmínky >= 2)
-output = []
-for (league, round_), count in results.items():
-    output.append({
-        "league": league,
-        "round": round_,
-        "halftime_0_0_series": count
-    })
+    if key not in series:
+        series[key] = 0
+    series[key] += 1
 
-# Vložení do data.json (do existujícího klíče)
+# >>> Filtruj jen série s alespoň 2 poločasy 0:0 v řadě
+output_series = []
+for (league, round_), count in series.items():
+    if count >= 2:
+        output_series.append({
+            "league": league,
+            "round": round_,
+            "draws_0_0_halftime_in_a_row": count
+        })
+
+# >>> Sloučení s fulltime daty (zachovej strukturu JSONu)
 try:
     with open("data.json", "r", encoding="utf-8") as f:
-        data = json.load(f)
-except FileNotFoundError:
-    data = {}
+        current_data = json.load(f)
+except (FileNotFoundError, json.JSONDecodeError):
+    current_data = {}
 
-data["halftime_draws_series"] = output
+current_data["halftime_draws_series"] = output_series
 
+# >>> Ulož výstup
 with open("data.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
+    json.dump(current_data, f, ensure_ascii=False, indent=2)
