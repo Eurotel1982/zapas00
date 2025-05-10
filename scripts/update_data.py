@@ -18,7 +18,9 @@ for date in dates:
     response = requests.get(url, headers=headers)
     daily = response.json().get("response", [])
     fixtures.extend(daily)
-
+print(f"Načteno zápasů: {len(fixtures)}")
+if fixtures:
+    print(f"Příklad zápasu: {fixtures[0]}")
 # Počet remíz 0:0 na konci zápasu (fulltime)
 fulltime_results = {}
 for match in fixtures:
