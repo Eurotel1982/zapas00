@@ -34,16 +34,10 @@ for match in fixtures:
 
 # Výstup pro JSON
 output = {
-    "fulltime_draws": [
+    "fulltime_draws": 
         {"league": league, "round": round_name, "draws_0_0": count}
         for (league, round_name), count in fulltime_results.items()
-    ],
-    "halftime_draws_series": [
-        {"league": league, "round": round_name, "series_0_0": streak}
-        for (league, round_name), streak in halftime_streaks.items()
-    ]
-}
-
+    
 # Uložení
 with open("data.json", "w", encoding="utf-8") as f:
     json.dump(output, f, ensure_ascii=False, indent=2)
