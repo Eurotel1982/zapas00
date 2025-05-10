@@ -32,32 +32,6 @@ for match in fixtures:
         key = (league, round_name)
         fulltime_results[key] = fulltime_results.get(key, 0) + 1
 
-# Sběr sérií poločasových remíz v rámci jednoho kola
-halftime_series = {}
-for match in fixtures:
-    if match["fixture"]["status"]["short"] == "FT":
-        league = match["league"]["name"]
-        round_name = match["league"].get("round", "")
-        halftime = match.get("score", {}).get("halftime", {})
-        if halftime.get("home") == 0 and halftime.get("away") == 0:
-            key = (league, round_name)
-            halftime_series.setdefault(key, []).append(1)
-        else:
-            halftime_series.setdefault(key, []).append(0)
-
-# Zjisti max. sérii 0:0 poločasů v řadě
-halftime_streaks = {}
-for key, series in halftime_series.items():
-    max_streak = streak = 0
-    for val in series:
-        if val == 1:
-            streak += 1
-            max_streak = max(max_streak, streak)
-        else:
-            streak = 0
-    if max_streak > 0:
-        halftime_streaks[key] = max_streak
-
 # Výstup pro JSON
 output = {
     "fulltime_draws": [
